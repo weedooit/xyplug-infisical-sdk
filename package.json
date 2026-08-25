@@ -1,7 +1,7 @@
 {
   "name": "xyplug-infisical-sdk",
-  "version": "0.1.0",
-  "description": "Private Infisical SDK smoke plugin for the xyOps workflow automation system.",
+  "version": "0.1.1",
+  "description": "Public GitHub Infisical SDK smoke plugin for the xyOps workflow automation system.",
   "private": true,
   "type": "module",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/weedooit/xyplug-infisical-sdk.git"
+    "url": "git+https://github.com/weedooit/xyplug-infisical-sdk.git"
   },
   "keywords": [
     "xyops",

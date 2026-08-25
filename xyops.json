@@ -11,7 +11,7 @@
         "title": "Infisical SDK Smoke",
         "enabled": true,
         "type": "event",
-        "command": "npx -y git+ssh://git@github.com/weedooit/xyplug-infisical-sdk.git#v0.1.0",
+        "command": "npx -y github:weedooit/xyplug-infisical-sdk#v0.1.1",
         "script": "",
         "groups": [],
         "format": "",
