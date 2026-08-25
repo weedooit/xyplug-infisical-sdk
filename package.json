@@ -1,0 +1,35 @@
+{
+  "name": "xyplug-infisical-sdk",
+  "version": "0.1.0",
+  "description": "Private Infisical SDK smoke plugin for the xyOps workflow automation system.",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "xyplug-infisical-sdk": "./index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/weedooit/xyplug-infisical-sdk.git"
+  },
+  "keywords": [
+    "xyops",
+    "infisical",
+    "plugin"
+  ],
+  "files": [
+    "index.js",
+    "xyops.json",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "validate:xypdf": "node scripts/validate-xypdf.mjs xyops.json"
+  },
+  "dependencies": {
+    "@infisical/sdk": "5.0.2"
+  }
+}

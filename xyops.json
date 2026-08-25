@@ -1,0 +1,24 @@
+{
+  "type": "xypdf",
+  "version": "1.0",
+  "xyops": "1.0.92",
+  "description": "Infisical SDK smoke Event Plugin",
+  "items": [
+    {
+      "type": "plugin",
+      "data": {
+        "id": "wxy_plugin_infisical_sdk_smoke",
+        "title": "Infisical SDK Smoke",
+        "enabled": true,
+        "type": "event",
+        "command": "npx -y git+ssh://git@github.com/weedooit/xyplug-infisical-sdk.git#v0.1.0",
+        "script": "",
+        "groups": [],
+        "format": "",
+        "params": [],
+        "kill": "parent",
+        "notes": "Loads the Infisical SDK without credentials or network requests."
+      }
+    }
+  ]
+}
