@@ -1,6 +1,6 @@
 {
   "name": "xyplug-infisical-sdk",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Public GitHub Infisical package-load plugin for the xyOps workflow automation system.",
   "private": true,
   "type": "module",

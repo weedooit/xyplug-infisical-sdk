@@ -19,6 +19,10 @@ function readStandardInput() {
 }
 
 function validateEvent(input) {
+  if (input.trim() === "") {
+    return;
+  }
+
   const event = JSON.parse(input);
   if (
     event?.xy !== 1
