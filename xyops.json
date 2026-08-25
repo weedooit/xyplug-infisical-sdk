@@ -2,16 +2,16 @@
   "type": "xypdf",
   "version": "1.0",
   "xyops": "1.0.92",
-  "description": "Infisical SDK smoke Event Plugin",
+  "description": "Infisical package-load Event Plugin",
   "items": [
     {
       "type": "plugin",
       "data": {
         "id": "wxy_plugin_infisical_sdk_smoke",
-        "title": "Infisical SDK Smoke",
+        "title": "Infisical Package Load (GitHub npx)",
         "enabled": true,
         "type": "event",
-        "command": "npx -y github:weedooit/xyplug-infisical-sdk#v0.1.1",
+        "command": "npx -y github:weedooit/xyplug-infisical-sdk#v0.1.2",
         "script": "",
         "groups": [],
         "format": "",

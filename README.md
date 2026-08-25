@@ -1,4 +1,4 @@
-# Infisical SDK Smoke Plugin
+# Infisical Package Load (GitHub npx)
 
 This public GitHub xyOps Event Plugin verifies that the Infisical JavaScript SDK can
 load in the xySat Node.js runtime. It validates a minimal xyOps Event input,
@@ -17,10 +17,10 @@ requests.
 ## xyOps portable definition
 
 `xyops.json` is a small XYPDF definition. Its Plugin command is pinned to the
-`v0.1.1` Git tag and its `script` field is intentionally empty:
+`v0.1.2` Git tag and its `script` field is intentionally empty:
 
 ```text
-npx -y github:weedooit/xyplug-infisical-sdk#v0.1.1
+npx -y github:weedooit/xyplug-infisical-sdk#v0.1.2
 ```
 
 The SDK and its dependencies are installed by `npx` when a Job runs. They are
