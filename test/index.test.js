@@ -38,3 +38,19 @@ test("loads the Infisical SDK when xyOps supplies no stdin", () => {
     { xy: 1, code: 0 },
   ]);
 });
+
+test("loads the Infisical SDK when xyOps supplies non-JSON stdin", () => {
+  const result = spawnSync(process.execPath, [pluginPath], {
+    encoding: "utf8",
+    input: "xyOps runtime envelope",
+  });
+
+  assert.equal(result.status, 0, result.stderr);
+  assert.equal(result.stderr, "");
+
+  const lines = result.stdout.trimEnd().split("\n").map((line) => JSON.parse(line));
+  assert.deepEqual(lines, [
+    { xy: 1, data: { sdk: "infisical", client_ready: true } },
+    { xy: 1, code: 0 },
+  ]);
+});

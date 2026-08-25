@@ -15,6 +15,6 @@ test("ships the public GitHub package-load title and a pinned NPX XYPDF", () => 
   assert.equal(manifest.version, "1.0");
   assert.equal(manifest.xyops, "1.0.92");
   assert.equal(plugin.title, "Infisical Package Load (GitHub npx)");
-  assert.equal(plugin.command, "npx -y github:weedooit/xyplug-infisical-sdk#v0.1.3");
+  assert.equal(plugin.command, "npx -y github:weedooit/xyplug-infisical-sdk#v0.1.4");
   assert.equal(plugin.script, "");
 });

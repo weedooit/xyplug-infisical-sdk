@@ -18,28 +18,11 @@ function readStandardInput() {
   });
 }
 
-function validateEvent(input) {
-  if (input.trim() === "") {
-    return;
-  }
-
-  const event = JSON.parse(input);
-  if (
-    event?.xy !== 1
-    || event.type !== "event"
-    || event.input?.data === null
-    || typeof event.input?.data !== "object"
-    || Array.isArray(event.input.data)
-  ) {
-    throw new Error("invalid event");
-  }
-}
-
 async function run() {
   try {
-    validateEvent(await readStandardInput());
+    await readStandardInput();
   } catch {
-    writeWire({ xy: 1, code: "VALIDATION_FAILED", description: "Input validation failed" });
+    writeWire({ xy: 1, code: "INPUT_READ_FAILED", description: "Plugin input could not be read" });
     process.exitCode = 1;
     return;
   }

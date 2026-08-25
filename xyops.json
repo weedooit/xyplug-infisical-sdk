@@ -11,7 +11,7 @@
         "title": "Infisical Package Load (GitHub npx)",
         "enabled": true,
         "type": "event",
-        "command": "npx -y github:weedooit/xyplug-infisical-sdk#v0.1.3",
+        "command": "npx -y github:weedooit/xyplug-infisical-sdk#v0.1.4",
         "script": "",
         "groups": [],
         "format": "",
